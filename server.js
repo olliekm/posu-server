@@ -62,11 +62,7 @@ app.use(cors())
   })
 
   app.get('/', async (req, res) => {
-    try {
-      res.send("users")
-    } catch (err) {
-      res.status(500).json({ message: err.message })
-    }
+    res.send("users")
   })
   
   
